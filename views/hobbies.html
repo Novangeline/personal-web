@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>What do I do for fun??</title>
+		<link href="bootstrap.min.css" rel="stylesheet" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .carousel {
+                max-width: 800px; /* Adjust the width */
+                max-height: 600px; /* Adjust the height */
+                margin: auto;
+            }
+            .carousel-item img {
+                width: 100%;
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+    </head>
+    <body style="background-color:#edf6f9">
+        <header>
+            <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #006d77">
+                <div class="container-fluid">
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <img src="/profpic.jpg" alt="Profile Picture" style="width:40px; height:40px" class="rounded-pill"> 
+                        <a class="navbar-brand" style="color: #83c5be;" href="/">Novangeline Santoso</a>
+                        <li class="nav-item">
+                        <a class="nav-link" style="color: #83c5be;" href="https:/linkedin.com/in/novangeline-santoso">Linkedin</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" style="color: #83c5be;" href="https:/github.com/Novangeline">Github</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" style="color: #002f33;" href="/what-i-do-for-fun">What I Do For Fun</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" class="width: 50 height:50">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="golf.jpg" alt="golf" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Golfing</h3>
+                <p>I love to hit the driving range on my free time!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="snow.jpg" alt="snow" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Roadtrips</h3>
+                <p>Short escapes are the best!</p>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src="concert.jpg" alt="concert" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Concerts</h3>
+                <p>I'm a concert girlie!</p>
+                </div>  
+            </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <div class="container-fluid mt-3">
+            <h3>More photos picturing my lifestyle!</h3>
+        </div>
+    </body>
+</html>
