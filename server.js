@@ -22,3 +22,7 @@ app.get("/", function (req, res) {
 app.get("/what-i-do-for-fun", function (req, res) {
     res.render("hobbies.html");
 })
+
+app.get("/journey", function (req, res) {
+    res.render("journey.html");
+})
