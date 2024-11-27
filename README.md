@@ -1,5 +1,5 @@
 # personal-web
-Personal Website
+Check out my profile!
 
 How to run?
 
