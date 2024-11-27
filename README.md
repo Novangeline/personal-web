@@ -1,5 +1,5 @@
 # personal-web
- Personal Website
+Personal Website
 
 How to run?
 
