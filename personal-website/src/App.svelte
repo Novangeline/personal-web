@@ -3,16 +3,16 @@
     import Dashboard from './Dashboard.svelte';
     import Hobbies from './Hobbies.svelte';
     import Journey from './Journey.svelte';
+    import Header from './Header.svelte';
 </script>
 
+<!-- Router for Page Navigation -->
 <Router>
-	<nav>
-		<!-- Use <Link> components for navigation -->
-		<Link to="/">Home</Link> |
-		<Link to="/hobbies">What I Do For Fun</Link> |
-		<Link to="/journey">Journey</Link>
-	</nav>
+    <!-- Global header component -->
+    <Header /> 
+
     <Route path="/" component={Dashboard} />
     <Route path="/hobbies" component={Hobbies} />
     <Route path="/journey" component={Journey} />
+
 </Router>
