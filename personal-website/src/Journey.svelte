@@ -96,7 +96,13 @@
         </div>
     </div><br><br>
     <div>
-        <h1>2025 (Coming Soon)</h1>
+        <h1>2025</h1>
+    </div><br>
+    <div class="card shadow">
+        <div class="card-body">
+            <h3>Internship as a Software Engineer at Huddled💼</h3>
+            <p>Finally landed and started my first ever tech internship!</p>
+        </div>
     </div><br>
     <div class="card shadow">
         <div class="card-body">
