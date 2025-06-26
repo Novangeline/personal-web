@@ -40,7 +40,7 @@
 {#if !imagesLoaded}
 	<!-- Splash screen -->
 	<section class="flex min-h-screen flex-col items-center justify-center bg-[#fdf6ec] text-[#a0764b]">
-		<img src="/cat-gif.gif" alt="Loading..." class="w-40 h-40 mb-6" />
+		<img src="/cat.gif" alt="Loading..." class="w-40 h-40 mb-6" />
 		<p class="text-xl font-medium animate-pulse">Loading memories... 🐾</p>
 	</section>
 {:else}

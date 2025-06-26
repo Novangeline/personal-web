@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="grid h-screen grid-cols-[1fr_3fr_1fr] overflow-hidden bg-gradient-to-b from-[#fdf6ec] via-[#f5eee0] to-[#f3e9da]"
+	class="grid h-screen grid-cols-1 overflow-hidden bg-gradient-to-b from-[#fdf6ec] via-[#f5eee0] to-[#f3e9da] lg:grid-cols-[1fr_3fr_1fr]"
 >
 	<!-- Left Column -->
 	<div class="relative hidden lg:block">

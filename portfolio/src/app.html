@@ -7,6 +7,15 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<body>
+			<div id="splash-screen" style="position: fixed; inset: 0; background: #fffdf8; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+			  <div style="text-align: center;">
+				<img src="/dog.gif" alt="Loading..." style="width: 120px; height: auto;" />
+				<p style="margin-top: 1rem; font-family: sans-serif; color: #a0764b;">
+				  Sit tight! Loading your experience...
+				</p>
+			  </div>
+			</div>		  
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
