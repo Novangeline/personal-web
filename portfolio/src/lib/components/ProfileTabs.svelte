@@ -2,7 +2,8 @@
 	import AboutPreview from '$lib/components/About.svelte';
 	import ProjectsTab from '$lib/components/Projects.svelte';
 	import Journey from './Journey.svelte';
-    import Gallery from './Gallery.svelte';
+	import Gallery from './Gallery.svelte';
+	import { fade } from 'svelte/transition';
 
 	let activeTab = 'about';
 </script>
@@ -29,8 +30,8 @@
 	</button>
 
 	<button
-	  on:click={() => (activeTab = 'journey')}
-	  class="rounded-full bg-[#e6d8c7] px-4 py-2 text-sm
+		on:click={() => (activeTab = 'journey')}
+		class="rounded-full bg-[#e6d8c7] px-4 py-2 text-sm
       font-medium transition
       hover:bg-[#d6c5b1] md:text-base
       {activeTab === 'journey' ? 'ring-2 ring-[#a0764b]' : ''}"
@@ -49,15 +50,24 @@
 	</button>
 </div>
 
-<div class="w-full max-w-4xl px-6 py-8 mx-auto text-left">
-
-{#if activeTab === 'about'}
-	<AboutPreview />
-{:else if activeTab === 'projects'}
-	<ProjectsTab />
-{:else if activeTab === 'journey'}
-	<Journey />
-{:else if activeTab === 'gallery'}
-	<Gallery />
-{/if}
+<div class="mx-auto w-full max-w-4xl px-6 py-8 text-left">
+	{#key activeTab}
+		{#if activeTab === 'about'}
+			<div in:fade>
+				<AboutPreview />
+			</div>
+		{:else if activeTab === 'projects'}
+			<div in:fade>
+				<ProjectsTab />
+			</div>
+		{:else if activeTab === 'journey'}
+			<div in:fade>
+				<Journey />
+			</div>
+		{:else if activeTab === 'gallery'}
+			<div in:fade>
+				<Gallery />
+			</div>
+		{/if}
+	{/key}
 </div>

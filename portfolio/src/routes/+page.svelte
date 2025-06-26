@@ -9,8 +9,8 @@
 	<!-- Left Column -->
 	<div class="relative hidden lg:block">
 		<img
-			src="/blob-bg.svg"
-			alt="Pattern"
+			src="/backdrop.jpg"
+			alt="Backdrop"
 			class="pointer-events-none absolute top-0 left-0 h-full w-full object-cover opacity-30"
 		/>
 	</div>
@@ -20,6 +20,7 @@
 		<!-- Profile Section in Horizontal Layout -->
 		<div class="mb-8 flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
 			<!-- Profile Image on the Left -->
+			<!-- svelte-ignore a11y_img_redundant_alt -->
 			<img
 				src="/me.jpg"
 				alt="Photo of Novangeline"
@@ -73,8 +74,8 @@
 	<!-- Right Column -->
 	<div class="relative hidden lg:block">
 		<img
-			src="/blob-bg.svg"
-			alt="Pattern"
+			src="/backdrop.jpg"
+			alt="Backdrop"
 			class="pointer-events-none absolute top-0 left-0 h-full w-full object-cover opacity-30"
 		/>
 	</div>
